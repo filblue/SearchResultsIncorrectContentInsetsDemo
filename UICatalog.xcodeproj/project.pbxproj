@@ -15,7 +15,6 @@
 		5356824018F3656900BAAD62 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5356823F18F3656900BAAD62 /* CoreGraphics.framework */; };
 		5356824218F3656900BAAD62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5356824118F3656900BAAD62 /* UIKit.framework */; };
 		5356824A18F3656900BAAD62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5356824918F3656900BAAD62 /* main.m */; };
-		5356825918F3656900BAAD62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5356825818F3656900BAAD62 /* Images.xcassets */; };
 		535682AA18F3670300BAAD62 /* AAPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5356827C18F3670300BAAD62 /* AAPLAppDelegate.m */; };
 		535682AF18F3670300BAAD62 /* AAPLDefaultSearchBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5356828618F3670300BAAD62 /* AAPLDefaultSearchBarViewController.m */; };
 		535682BF18F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.m in Sources */ = {isa = PBXBuildFile; fileRef = 535682A618F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.m */; };
@@ -37,7 +36,6 @@
 		5356824518F3656900BAAD62 /* UICatalog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UICatalog-Info.plist"; sourceTree = "<group>"; };
 		5356824918F3656900BAAD62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5356824B18F3656900BAAD62 /* UICatalog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICatalog-Prefix.pch"; sourceTree = "<group>"; };
-		5356825818F3656900BAAD62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5356827B18F3670300BAAD62 /* AAPLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLAppDelegate.h; sourceTree = "<group>"; };
 		5356827C18F3670300BAAD62 /* AAPLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLAppDelegate.m; sourceTree = "<group>"; };
 		5356828518F3670300BAAD62 /* AAPLDefaultSearchBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLDefaultSearchBarViewController.h; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 			children = (
 				535682C018F3680D00BAAD62 /* View Controllers */,
 				53874F9A18F36B6900510922 /* Application */,
-				5356825818F3656900BAAD62 /* Images.xcassets */,
 				5356824418F3656900BAAD62 /* Supporting Files */,
 			);
 			path = UICatalog;
@@ -222,7 +219,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				53874F9918F36B1800510922 /* Localizable.strings in Resources */,
-				5356825918F3656900BAAD62 /* Images.xcassets in Resources */,
 				3EC13ADE1933D95700915353 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +343,7 @@
 				GCC_PREFIX_HEADER = "UICatalog/UICatalog-Prefix.pch";
 				INFOPLIST_FILE = "UICatalog/UICatalog-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -360,6 +357,7 @@
 				GCC_PREFIX_HEADER = "UICatalog/UICatalog-Prefix.pch";
 				INFOPLIST_FILE = "UICatalog/UICatalog-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
